@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'cyan-primary': '#08ecec'
+        'cyan-primary': '#15ebfb',
+        'orange-primary': '#f1361f'
       },
       fontFamily: {
-        'ubuntu': 'Ubuntu',
-        'chakra-petch': '"Chakra Petch"',
+        'gomme-sans': 'Gomme-Sans'
       },
       screens: {
         'xs': '480px'

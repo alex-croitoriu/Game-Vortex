@@ -9,18 +9,27 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-gray-800 min-h-screen lg:mx-14 my-4">
+<body class="bg-gradient-to-b from-[#112836] to-[#000000] h-screen lg:mx-14 my-4">
 
-    <header class="mx-auto h-14 bg-gray-950 rounded-full max-w-7xl w-full shadow-lg flex items-center">
-        <div class="flex justify-between text-cyan-primary font-semibold w-full mx-8 md:mx-10 h-full relative text-sm lg:text-base">
+    <header class="mx-auto h-14 bg-black rounded-full max-w-7xl w-full shadow-lg flex items-center">
+        <div class="flex justify-between text-cyan-primary w-full mx-8 md:mx-10 h-full relative text-sm lg:text-base">
             <div class="flex justify-center items-center absolute w-full h-full z-1">
-                <a href="/" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250 text-2xl font-bold flex items-center"> 
-                    <img src="img/full-logo.png" class="h-full max-h-6 lg:max-h-7" alt="GAME VORTEX">
+                <a href="/" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250 relative"> 
+                    <h1 class="flex items-center text-2xl  tracking-[.25em] text-center w-fit font-gomme-sans">
+                        <span> GAME V </span>
+                        <img src="img/logo.png" class="size-6 mr-[.25em] mt-0.5">
+                        <span> RTEX </span>
+                    </h1>
+                    <h1 class="flex items-center text-2xl tracking-[.25em] absolute blur-sm text-transparent text-center w-fit">
+                        <span> GAME V </span>
+                        <img src="img/logo.png" class="size-6 mr-[.25em] mt-0.5">
+                        <span> RTEX </span>
+                    </h1>
                 </a>
             </div>
-            <nav class="items-center z-0 hidden md:flex">
-                <a href="/" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250"> Games </a>
-                <a href="/reviews" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250"> Reviews </a>
+            <nav class="items-center z-0 hidden md:flex ">
+                <a href="/" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250"> Popular </a>
+                <a href="/reviews" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250"> Latest </a>
                 <a href="/coming-soon" wire:navigate class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250 "> Coming soon </a>
             </nav>
             <div class="items-center z-0 hidden md:flex">
@@ -41,6 +50,13 @@
         </div>
     </header>
 
+    <div class="flex flex-col items-center w-full mt-40 ">
+        <img src="/img/logo.png">
+        <h1 class="text-6xl font-gomme-sans text-white tracking-widest text-center">
+            GAME <br>
+            <span class="text-4xl"> VORTEX </span>
+        </h1>
+    </div>
     <main class="max-w-7xl mx-auto">
         <div class="mx-10 my-16">
             {{ $slot }}
@@ -51,8 +67,7 @@
         <div class="flex justify-between text-cyan-primary w-full mx-6 lg:mx-20 text-xs md:text-sm">
             <div class="flex justify-end">
                 <a href="https://www.igdb.com/api" class="p-1.5 rounded-full hover:bg-gray-800 transition duration-250 text-center">
-                    Powered by
-                    <span class="font-bold"> IGDB API </span>
+                    © 2024 Alex Croitoriu
                 </a>
             </div>
             <div class="flex justify-start">

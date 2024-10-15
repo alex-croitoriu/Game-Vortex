@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
     html {
-        font-family: Chakra Petch, system-ui, sans-serif;
+        font-family: gomme-sans, system-ui, sans-serif;
     }
+} */
+
+@font-face {
+    font-family: 'Gomme-Sans';
+    font-weight: normal;
+    font-style: normal;
+         
+    src: url("../../public/fonts/Gomme-Sans/Regular.otf"),
+         url("../../public/fonts/Gomme-Sans/Bold.otf"),
+         url("../../public/fonts/Gomme-Sans/Bold_Italic.otf"),
+         url("../../public/fonts/Gomme-Sans/ExtraBold.otf"),
+         url("../../public/fonts/Gomme-Sans/ExtraBold_Italic.otf"),
+         url("../../public/fonts/Gomme-Sans/ExtraLight.otf"),
+         url("../../public/fonts/Gomme-Sans/ExtraLight_Italic.otf"),
+         url("../../public/fonts/Gomme-Sans/Italic.otf"),
+         url("../../public/fonts/Gomme-Sans/Light.otf"),
+         url("../../public/fonts/Gomme-Sans/Light_Italic.otf"),
+         url("../../public/fonts/Gomme-Sans/SemiBold.otf"),
+         url("../../public/fonts/Gomme-Sans/SemiBold_Italic.otf");
 }
 
 /* Scroll bar stylings */

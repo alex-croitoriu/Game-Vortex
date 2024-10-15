@@ -18,7 +18,7 @@ class ServeDev extends Command
      *
      * @var string
      */
-    protected $description = 'Run php artisan serve and bun dev';
+    protected $description = 'Run php artisan serve and bun dev --host';
 
     /**
      * Execute the console command.
